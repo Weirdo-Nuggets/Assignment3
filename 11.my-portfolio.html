@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Homepage - Analetizia</title>
+
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            background: linear-gradient(180deg, #f3e7ad, #e9f751, rgb(228, 214, 147));
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .header {
+            width: 100%;
+            height: 80px;
+            padding-top: 20px;
+            display: flex;
+            border-bottom: #d60e0e solid 2px;
+            color: black;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            margin: 5px;
+            margin-right: 20px;
+            width: max-content;
+            height: 90%;
+            color: black;
+            font-size: 18px;
+        }
+        li a:hover {
+            color: #1b1a1a;
+            background-color: #d65b0e;
+            border-radius: 10px;
+            font-weight: bolder;
+            transition: padding 2s;
+            padding: 5px;
+            height: 60%;
+        }
+        /*Portfolio container */
+        .portfolios {
+            display: flex;
+            height: max-content;
+        }
+        .portfolio {
+            width: 33.3%;
+        }
+        .portfolio:hover {
+            cursor: pointer;
+        }
+        .portfolio:hover .logo {
+            visibility: visible;
+            opacity: 1; 
+        }
+        .display {
+            width: 90%;
+            height: 400px;
+            border: #d60e0e 5px solid;
+            border-radius: 10px;
+            margin: 15px;
+            transition: 2s;
+        }
+        .display:hover {
+            filter: blur(15px) brightness(40%);
+            transition: 5s;
+        }
+        .logo {
+            position: relative;
+            bottom: 300px;
+            text-align: center;
+            color: white;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: visibility 0s, opacity 0.5s linear; 
+            transition: visibility 0s, opacity 0.5s linear;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <li style="list-style-type: none;"><a href="11.my-portfolio.html">Home</a></li>
+        <li style="list-style-type: none;"><a href="11.about.html">About</a></li>
+        
+        <p style="margin: 5px 0 0 auto; font-size: 18px;">Analetizia Uliber Simono</p>
+    </div>
+
+    <div class="portfolios">
+        <div class="portfolio">
+            <img class="display" src="4.Form_Website_pic.png" alt="Login Site Using Only HTML">
+            <div class="logo">
+                <img src="P38html.png" width="100" height="100">
+                <h3>My HTML Projects</h3>
+            </div>
+        </div>
+
+        <div class="portfolio">
+            <img class="display" src="10.home.png" alt="Login Site Using Only HTML">
+            <div class="logo">
+                <img src="P39css.png" width="100" height="100">
+                <h3>My CSS Projects</h3>
+            </div>
+        </div>
+
+        <div class="portfolio">
+            <div>
+                <img class="display" src="P41calculator.jpg" alt="Login Site Using Only HTML">
+                <div class="logo">
+                    <img src="P40js.png" width="100" height="100">
+                    <h3>My JavaScript Projects</h3>
+            </div>
+            </div>
+        </div>
+
+        
+    </div>
+</body>
+</html>
